@@ -29,3 +29,20 @@ let obj ={
 
 //tip : if we find out what is the dataytpe of null it gives us object.
 console.log(typeof null );  //Object
+
+
+// *****************************************************************
+//stack and heap memory
+// stakc (primitive) amd heap (non primitve)
+let name = "john"
+
+
+let user  ={
+    email: "john@gmail.com" ,
+    upi: "johnsingh123456789"
+
+}
+
+// we can acces the attributes of the object by using dot operator
+user.email = "sankarshan@gooogle.com"
+console.log(user);

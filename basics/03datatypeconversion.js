@@ -26,3 +26,9 @@ console.log(nconvert);   //NaN -not a number
 let isloggedIn = 1
 let loggedinB = Boolean(isloggedIn)  //Boolean B must be capital
 console.log(loggedinB);
+
+
+// ****************operations*********************
+
+let value = 3
+console.log();

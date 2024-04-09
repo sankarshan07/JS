@@ -19,3 +19,6 @@ console.log(hundreds.toLocaleString());     // adds commas 1,000,000
 // **********************MATH LIBRARY ********************************
 console.log(Math);
 console.log(Math.random());
+//floor gives the lowest value 
+// ceil  - gives the highest value
+

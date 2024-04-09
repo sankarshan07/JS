@@ -23,5 +23,19 @@ console.log(gamename2);
 // string methods doesnt change the origin value   of a variable even after applyinh methods
 
 // string slicing
-const str = gamename.substring(0,4) // it takes two parameters  startindex and end 
+const str = gamename.substring(0,4) // it takes two parameters  startindex and end  it doesnt take negative indexing
 console.log(str);
+
+const str4 = gamename.substring(-4,5)  // it includes negative slicing 
+console.log(str4);
+const newString1 = "     sankarshan     "
+console.log(newString1.trim()) ;    // removes white spaces from both sides 
+//replace
+const url = "https://sankarshan.com"
+console.log(url.replace(".com",".net"));  //replaces  .com to .net 
+//checking if a string contains another string
+console.log("hello world".includes("world")) ;
+//split method  
+const arr= ["apple","banana","cherry"];
+console.log(arr.join(","));  //joins all elements of array with comma
+

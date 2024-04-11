@@ -65,3 +65,28 @@ console.log(users[0].name);
 console.log(Object.keys(target)); //will be returned in array
 console.log(Object.values(target));  //wil be returned in array
 console.log(Object.entries(target)) ; // will return an array of arrays [key,value]
+
+
+// ******************************************************************************
+
+// object de structuring  IMP
+const course  = {
+    name :"js",
+    price: "999",
+    courseinstructor : "john"
+}
+const {courseinstructor: instructor} =course   //destructuring
+console.log(instructor);
+
+//API  
+
+
+//JSON
+[
+    { id: '1', name:'html' },   
+    { id: '2', name:'css'} ,
+    { id: '3', name:'javascript'},
+] 
+ 
+
+

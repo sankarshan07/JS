@@ -19,4 +19,17 @@ console.log(result);
 
 
 // NOTE 
-// IF WE ARE USING RETURN IN FUNCITON CALL WE NEED TO STORE THE FUNCTION CALL IN A VARIABLE
+// IF WE ARE USING RETURN IN FUNCITON CALL WE NEED TO STORE ..
+// ..THE FUNCTION CALL IN A VARIABLE OR CAN USE IN CONSOLE.LOG
+// dont wrtite anything after  return it will not execute the code below that line
+
+function loginUserMessage(userName){
+    if (userName === undefined){
+    console.log("please enter user name");
+    return
+    }
+    else
+    return  `Welcome ${userName} you are just logged in`
+}
+console.log(loginUserMessage("john doe"));
+    

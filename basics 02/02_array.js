@@ -38,3 +38,4 @@ let name = "sankarshan"
 let name2 = "helo"
 let name3= "World"
 console.log(Array.of(name,name2,name3));
+

@@ -32,4 +32,39 @@ function loginUserMessage(userName){
     return  `Welcome ${userName} you are just logged in`
 }
 console.log(loginUserMessage("john doe"));
-    
+
+
+
+
+//wwen we have more then one value  to pass  we use REST  operator  we use it beofre parameter indicating
+// that we have many parameters to pass and it will be considered as array
+
+function calculateCartPrice(...num1){   //REST operator
+    return num1
+}
+console.log(calculateCartPrice(40,500,600));  //will be bundled in array
+
+
+//handleing  objects in funciton
+const userobj ={
+    userName : "john",
+    price :199
+
+}
+function handleObj(anyObject){
+    console.log(`username is ${anyObject.userName} and price is ${anyObject.price}`);
+
+
+}
+handleObj(userobj)
+
+
+
+// handling array in funciton
+const myNewArray = [200,400,600,4665]
+function hadnleArr (getArray){
+return  getArray[1]
+}
+
+
+console.log(hadnleArr(myNewArray)) ;

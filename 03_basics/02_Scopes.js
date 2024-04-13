@@ -58,3 +58,6 @@ const addTwo =function (num) {
 console.log(addTwo(7));
 
 console.log(typeof addTwo);
+
+
+// hoisting  -declaring the fn in a  variable before using it will not throw an error but it will give undefined .

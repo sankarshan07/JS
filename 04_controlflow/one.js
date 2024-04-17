@@ -5,3 +5,12 @@ if (true) {
 else {
     console.log("not executed");
 }
+
+const temperature =410
+if (temperature <50 ){
+    console.log("its hot day");
+}
+else{
+
+    console.log("temperature is >50");
+}

@@ -14,3 +14,4 @@ else{
 
     console.log("temperature is >50");
 }
+console.log("outside the control flow");

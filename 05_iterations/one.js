@@ -20,3 +20,10 @@ for (let j = 0; j <=10; j++) {
     
 }    
  }
+
+ let myArray =["flash", "bang", "boom"];
+ for (let i = 0; i < myArray.length; i++) {
+    const element = myArray[i];
+    console.log(`Element at index ${i} and element is ${element}`)
+    
+ }

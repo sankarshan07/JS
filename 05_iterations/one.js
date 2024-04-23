@@ -1,4 +1,4 @@
-//for 
+// //for 
 
 for (let i = 0; i < 10; i++) {
     const element = i;   //block scope  variable, only accessible within the block
@@ -27,3 +27,9 @@ for (let j = 0; j <=10; j++) {
     console.log(`Element at index ${i} and element is ${element}`)
     
  }
+// function add(a,b)
+// {
+// return a + b;
+// }
+// var result = add("2","3");
+// console.log(result);

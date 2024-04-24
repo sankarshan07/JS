@@ -33,3 +33,14 @@ for (let j = 0; j <=10; j++) {
 // }
 // var result = add("2","3");
 // console.log(result)
+
+
+//break and continue 
+for (let index = 0; index <=20; index++) {
+    if (index==5) {
+        break
+    }
+    console.log(`value  of index is ${index}`);
+
+    
+}

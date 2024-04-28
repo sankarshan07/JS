@@ -44,3 +44,11 @@ for (let index = 0; index <=20; index++) {
 
     
 }
+//while
+var counter=0;
+while (counter<10){
+   console.log(`the value of counter is ${counter}`);
+   counter++;
+}
+
+

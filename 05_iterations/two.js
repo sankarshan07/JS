@@ -10,3 +10,11 @@ while (i < myArray.length) {
     console.log(`Element at index ${i} is ${myArray[i]}`)
  i = i + 1   
 }
+
+
+let score= 11
+do {
+console.log(`score is ${score}`);
+score++
+}while (score<=10);
+// output = 11 coz executes once before checking condition

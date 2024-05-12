@@ -18,9 +18,12 @@
    div.style.padding = "12px"
    div.innerText = "hello welcome to js"  // to add text in the div (overwrites)
     const addtext =document.createTextNode("new text")// add new text (doesnt overwrite)
-    div.appendChild(addtext)
+    div.appendChild(addtext) 
    console.log(div);
    console.log(div.innerHTML);
+
+
+   document.body.appendChild(div) //to attach to the main html body
 
 </script>
 </html>

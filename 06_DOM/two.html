@@ -17,14 +17,27 @@
     const parent = document.querySelector('.parent')
     console.log(parent);
     console.log(parent.children);
-    console.log(parent.children[0].innerHTML);
+    console.log(parent.children[0]);  //display element content
+    console.log(parent.children[0].innerHTML); //display content with tags
 
     // for (let i = 0; i < parent.children.length; i++) {
     //     //parent>children
     //     console.log(parent.children[i].innerHTML)   
     // }
     parent.children[1].style.color = "orange"   //styling
-    console.log(parent.firstElementChild);  //prints the first element child
+    // console.log(parent.firstElementChild);  //prints the first element child
+    // console.log(parent.lastElementChild); 
+    // console.log(parent.lastElementChild.innerText); 
+
+   const day1= document.querySelector(".day")
+   console.log(day1);
+   console.log(day1.innerHTML);
+   console.log(day1.parentElement); //displays parent element
+   console.log(day1.nextElementSibling.innerHTML)
+
+   console.log("nodes",parent.childNodes);  //nodelist is complex tree structure
+
+
 
 </script>
 </html>

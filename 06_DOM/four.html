@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | edit remove</title>
+</head> 
+<body style="background-color: black; color:wheat;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+    
+</body>
+<script>
+    function addLanguage(langName) {
+      const li  = document.createElement('li')
+      li.innerHTML = `${langName}`
+      document.querySelector('.language').appendChild(li)
+        
+    }
+    addLanguage("html and css");
+    addLanguage("python");
+
+    function addOptiLang(langName){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(li)        
+    }
+    addOptiLang("typescript")
+    //Edit
+    const editli = document.querySelector("li:nth-child(2)")
+    // editli.innerHTML = "reactjs"  //overwrites    one way to edit
+    const newli = document.createElement("li")
+    newli.textContent ="java"
+    editli.replaceWith(newli)
+
+    // rmeove 
+    const removeli = document.querySelector("li:last-child")
+    removeli.remove()
+</script>
+</html>

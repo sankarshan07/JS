@@ -1,5 +1,5 @@
 const button = document.querySelectorAll(".button")
-// console.log(button);
+
 const body = document.querySelector("body")
 
 

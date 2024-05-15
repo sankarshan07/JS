@@ -1,0 +1,18 @@
+body {
+  background-color: rgba(29, 27, 27, 0.692);
+  color: white;
+}
+.center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#clock {
+  font-size: 40px;
+  background-color: rgba(209, 150, 23, 0.836);
+  padding: 20px 50px;
+  margin-top: 10px;
+  border-radius: 10px;
+}

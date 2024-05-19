@@ -30,10 +30,13 @@
     // })
 
 //with event Object (e)
-     document.getElementById("owl").addEventListener('click',function(e){
-        console.log(e);
+    //  document.getElementById("owl").addEventListener('click',function(e){
+    //     console.log(e);
     
-    } ,false)  // third parameter is event propogations(event bubbling ,event capturing) which default value is false
+    // } ,false)
+      // third parameter is event propogations(event bubbling ,event capturing) which default value is false
+
+
     //things to learn
     //Event types,timestamp,defaultPrevented,
     //target ,toElement,srcElement,currentTarget,
@@ -50,17 +53,31 @@
 
 
 
-    document.getElementById('images').addEventListener("click",function (e) {   //target is images
-        console.log("clicked");
-    },false)  //event progogation 
-    document.getElementById('owl').addEventListener("click",function (e) {  //target is owl (images>owl)
-        console.log("owl clicked");
-        e.stopPropagation()  //event propogations is stopped
-    },false) //event propogation 
+    // document.getElementById('images').addEventListener("click",function (e) {   //target is images
+    //     console.log("clicked");
+    // },false)  //event progogation 
+    // document.getElementById('owl').addEventListener("click",function (e) {  //target is owl (images>owl)
+    //     console.log("owl clicked");
+    //     e.stopPropagation()  //event propogations is stopped
+    // },false) //event propogation 
     
-    document.getElementById("google").addEventListener("click",function(e){
-        e.preventDefault()
-    })
+    // document.getElementById("google").addEventListener("click",function(e){
+    //     e.preventDefault()
+    // })
+
+
+    //target usage
+    document.querySelector("#images").addEventListener("click",function(e){
+        console.log(e.target.parentNode);  
+        if (e.target.tagName === "IMG"){
+
+            let removeit =e.target.parentNode
+            removeit.remove() 
+        }
+        
+        // removeit.parentNode.removeChild(removeit)
+
+    },false);
 
 
 

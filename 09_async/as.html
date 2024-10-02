@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async</title>
+</head>
+<body>
+    <h1>async</h1>
+    <button id="stop"></button>
+</body>
+<script>
+    const sayMyName =function(){
+        console.log("hello sankarshan");
+        
+    }
+  const changetext = function(){
+
+      document.querySelector('h1').innerHTML ="sankarshan desai"
+    }
+
+    const changeme= setTimeout( changetext,2000)   //method and calls an api      1sec = 1000 mili sec   //setTimeout takes 2 parameters 1 is handler and other is timeout in milisec
+ document.querySelector("#stop").addEventListener('click',function(){
+    clearTimeout( changeme); //clears the timer
+    console.log("Stopped");
+    
+ })
+</script>
+</html>

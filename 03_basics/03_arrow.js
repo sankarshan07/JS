@@ -2,7 +2,7 @@ const user ={
     username : "john",
     price : 699,
     welcomeMessage : function(){
-        console.log(`${this.username} ,welcome to website`);  //this key word tells about the current contex t 
+        console.log(`${this.username} ,welcome to website`);  //this key word tells about the current context 
     }
 }
 
